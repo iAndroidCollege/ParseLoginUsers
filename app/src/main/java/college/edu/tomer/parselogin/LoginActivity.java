@@ -95,6 +95,7 @@ public class LoginActivity extends AppCompatActivity {
         user.setUsername(etUserName.getText().toString());
         user.setPassword(etPass.getText().toString());
 
+        user.put("Shnitzel", "Loving!");
         user.signUpInBackground(new SignUpCallback() {
             @Override
             public void done(ParseException e) {
