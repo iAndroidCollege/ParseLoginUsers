@@ -14,8 +14,10 @@ public class AppManager extends Application {
     private static Context ctx;
 
     public static ParseUser getCurrentUser(Context context) throws RuntimeException {
-        if (context.getApplicationContext() == ctx)
+        if (context.getApplicationContext() == ctx) {
+            currentUser = ParseUser.getCurrentUser();
             return currentUser;
+        }
         throw new SecurityException("Not Authorized context");
     }
 

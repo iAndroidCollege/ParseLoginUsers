@@ -42,4 +42,12 @@
             />
     </android.support.design.widget.TextInputLayout>
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New CheckBox"
+        android:id="@+id/checkboxLoginSignUp"
+        android:layout_below="@+id/tilPassword"
+        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>
